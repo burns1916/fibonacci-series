@@ -1,6 +1,13 @@
 function fibonacci(num) {
   // type your code here
+  if (num <= 1) {
+    return num;
+  } else {
+    return fibonacci(num - 1) + fibonacci(num - 2)
+  }
 }
+
+console.log(fibonacci())
 
 if (require.main === module) {
   // add your own tests in here
@@ -21,4 +28,5 @@ if (require.main === module) {
 module.exports = fibonacci;
 
 // Please add your pseudocode to this file
+  //
 // And a written explanation of your solution
